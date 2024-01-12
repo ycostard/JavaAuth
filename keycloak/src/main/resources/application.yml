@@ -1,0 +1,14 @@
+spring:
+    security:
+        oauth2:
+            client:
+                provider:
+                    keycloak:
+                        issuer-uri: http://localhost:8090/realms/JavaAuth
+                registration:
+                    keycloak:
+                        client-name: app-back
+                        client-id: app-back
+                        client-secret: 0qu1mFXhSHLFRXkr1bvhfAEcRHUfotSw
+                        scope: openid,offline_access,profile 
+                        authorization-grant-type: authorization_code
